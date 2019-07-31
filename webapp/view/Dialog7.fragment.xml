@@ -1,0 +1,38 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.ba293bd41-us_1.mobileRequestMaintenanceV5B.controller.Dialog7" xmlns="sap.m" xmlns:vbm="sap.ui.vbm" xmlns:form="sap.ui.layout.form">
+    <Dialog contentHeight="100%" contentWidth="100%" horizontalScrolling="false" showHeader="false" state="None" stretch="false" title="Select Functional Location" type="Standard" verticalScrolling="false">
+        <content>
+            <vbm:GeoMap legendVisible="true" scaleVisible="true" width="100%" height="100%" initialPosition="33.018755" centerPosition="" initialZoom="" zoomlevel="6" enableAnimation="false" refMapLayerStack="Default" disableZoom="false" disablePan="false">
+                <vbm:resources/>
+                <vbm:legend/>
+                <vbm:vos>
+                    <vbm:Spots>
+                        <vbm:items>
+                            <vbm:Spot position="-119.083855;37.386051;0" alignment="5"/>
+                        </vbm:items>
+                    </vbm:Spots>
+                    <vbm:Circles>
+                        <vbm:items/>
+                    </vbm:Circles>
+                    <vbm:Routes>
+                        <vbm:items/>
+                    </vbm:Routes>
+                </vbm:vos>
+            </vbm:GeoMap>
+            <form:Form width="100%" editable="false" visible="true">
+                <form:title/>
+                <form:formContainers/>
+                <form:layout>
+                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                </form:layout>
+            </form:Form>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="Confirm" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+            <Button text="Cancel" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

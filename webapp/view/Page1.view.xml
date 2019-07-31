@@ -1,0 +1,389 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.ba293bd41-us_1.mobileRequestMaintenanceV5B.controller.Page1"
+	xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:unified="sap.ui.unified">
+	<Page showHeader="true" title="Request Maintenance" showFooter="true" showNavButton="false">
+		<content>
+			<layout:BlockLayout background="Dashboard" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="4" title="" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<Panel height="auto" width="100%" headerText="Notification" expandable="false" expanded="true" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Notification Type" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<ComboBox id="notifif4" editable="true" enabled="true" visible="true" width="auto" valueState="None" selectionChange="org">
+																		<items>
+																			<core:Item text="Malfunction Report M1" enabled="true" key="M1"/>
+																			<core:Item text="Breakdown Maintenance M2" enabled="true" key="M2"/>
+																			<core:Item text="Shutdown Maintenance M3" enabled="true" key="M3"/>
+																			<core:Item text="Preventive Maintenance M4" enabled="true" key="M4"/>
+																		</items>
+																	</ComboBox>
+																	<Button text="" type="Emphasized" icon="sap-icon://bar-code" iconFirst="true" width="50px" enabled="true" visible="false"
+																		iconDensityAware="false" press="_onButtonPress"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Technical Object" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<Input id="productInput" type="Text" value="" placeholder="Enter Product ..." showValueHelp="true" valueHelpOnly="true"
+																		valueHelpRequest="handleValueHelp" class="sapUiSmallMarginBottom" width="auto"/>
+																	<SegmentedButton width="auto" enabled="true" visible="true">
+																		<items>
+																			<SegmentedButtonItem icon="sap-icon://functional-location" text="" width="60px" enabled="true" tooltip="Functional Location"
+																				press="_onSegmentedButtonItemPress"/>
+																			<SegmentedButtonItem icon="sap-icon://bar-code" text="" width="60px" enabled="true" tooltip="Barcode Scan" press="onScanForValue"/>
+																		</items>
+																	</SegmentedButton>
+																</form:fields>
+															</form:FormElement>
+															<form:FormElement visible="false">
+																<form:label>
+																	<Label text="Equipment" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<Input id="equiptInp" visible="true" type="Text" value="" placeholder="Enter Product ..." showValueHelp="true" valueHelpOnly="true"
+																		class="sapUiSmallMarginBottom" width="auto"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:FormElement visible="true">
+															<form:label>
+																<Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+															</form:label>
+															<form:fields>
+																<Link id="link" text="Details" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true"
+																	emphasized="false" subtle="false" press="details"/>
+															</form:fields>
+														</form:FormElement>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<!--<form:Form editable="true" visible="true">-->
+											<!--	<form:title/>-->
+											<!--	<form:formContainers>-->
+											<!--		<form:FormContainer visible="true">-->
+											<!--			<form:formElements>-->
+											<!--				<form:FormElement visible="true">-->
+											<!--					<form:label>-->
+											<!--						<Label text="Equipment" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+											<!--					</form:label>-->
+											<!--					<form:fields>-->
+											<!--						<ComboBox id="equip" placeholder="" editable="true" change="equichange" enabled="true" visible="true" width="100%" valueState="None"-->
+											<!--							maxWidth="100%"></ComboBox>-->
+											<!--						<SegmentedButton width="auto" enabled="true" visible="true">-->
+											<!--							<items>-->
+											<!--								<SegmentedButtonItem icon="sap-icon://bar-code" text="" width="60px" enabled="true" tooltip="Barcode Scan" press="onScanForValue"/>-->
+											<!--							</items>-->
+											<!--						</SegmentedButton>-->
+											<!--					</form:fields>-->
+											<!--				</form:FormElement>-->
+											<!--			</form:formElements>-->
+											<!--			<form:title/>-->
+											<!--		</form:FormContainer>-->
+											<!--	</form:formContainers>-->
+											<!--	<form:layout>-->
+											<!--		<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>-->
+											<!--	</form:layout>-->
+											<!--</form:Form>-->
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Priority" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<ComboBox id="prio12" editable="true" enabled="true" visible="true" width="auto" selectionChange="priority1" valueState="None">
+																		<core:Item text="VERY HIGH" enabled="true" key="1"/>
+																		<core:Item text="HIGH" enabled="true" key="2"/>
+																		<core:Item text="MEDIUM" enabled="true" key="3"/>
+																		<core:Item text="LOW" enabled="true" key="4"/>
+																	</ComboBox>
+																	<Button text="" type="Transparent" iconFirst="true" width="50px" enabled="true" visible="false" iconDensityAware="false"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Description" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<Input id="descript" value="" type="Text" showValueHelp="false" enabled="true" visible="true" width="55%" valueHelpOnly="false"
+																		maxLength="0"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Long Text" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<TextArea id="text" rows="5" value="" cols="20" wrapping="None" enabled="true" visible="true"/>
+																	<Link text="Use Template" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false"
+																		subtle="false" press="_onLinkPress"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Start Date" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<DatePicker id="startdate" width="auto" enabled="true" displayFormat="dd.MM.yyyy" visible="true" valueFormat="dd-MM-yyyy"/>
+																	<Button text="" type="Transparent" iconFirst="true" width="50px" enabled="true" visible="false" iconDensityAware="false"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="End Date" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<DatePicker id="enddate" width="auto" displayFormat="dd.MM.yyyy" enabled="true" visible="true" valueFormat="dd-MM-yyyy"/>
+																	<Button text="" type="Transparent" iconFirst="true" width="50px" enabled="true" visible="false" iconDensityAware="false"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form editable="true" visible="true">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="Reported By" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<ComboBox id="report" placeholder="" editable="true" change="equichange" enabled="true" visible="true" width="100%" valueState="None"
+																		maxWidth="100%"></ComboBox>
+																	<Button text="" type="Transparent" iconFirst="true" width="50px" enabled="true" visible="false" iconDensityAware="false"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+											<form:Form id="m2" editable="true" visible="false">
+												<form:title/>
+												<form:formContainers>
+													<form:FormContainer visible="true">
+														<form:formElements>
+															<form:FormElement visible="true">
+																<form:label>
+																	<Label text="BreakDown Time" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+																</form:label>
+																<form:fields>
+																	<TimePicker id="TP5" value="" valueFormat="HH:mm" displayFormat="HH:mm" change="handleChange" placeholder="Enter meeting start time"/>
+																	<CheckBox id="breakdown" text="BreakDown" select="checkDone"/>
+																	<Button text="" type="Transparent" iconFirst="true" width="50px" enabled="true" visible="false" iconDensityAware="false"/>
+																</form:fields>
+															</form:FormElement>
+														</form:formElements>
+														<form:title/>
+													</form:FormContainer>
+												</form:formContainers>
+												<form:layout>
+													<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+												</form:layout>
+											</form:Form>
+										</content>
+									</Panel>
+									<form:Form editable="true" visible="true">
+										<form:title/>
+										<form:formContainers/>
+										<form:layout>
+											<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+										</form:layout>
+									</form:Form>
+									<Panel height="auto" width="100%" headerText="Additional Details" expandable="true" expanded="false" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<Table id="idProductsTable" growing="true" noDataText="Add Details" growingThreshold="10" updateFinished="finish" delete="_onTableDelete">
+												<headerToolbar>
+													<OverflowToolbar id="otbSubheader">
+														<Title text="Item Details" level="H2"/>
+														<ToolbarSpacer/>
+														<content>
+															<Button xmlns="sap.m" icon="sap-icon://add" text="" press="addRow"/>
+														</content>
+													</OverflowToolbar>
+												</headerToolbar>
+												<columns>
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text id="mat" text="Object Part"/>
+													</Column>
+													<!--	<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+									<Text text="Description" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="false"/>
+								</Column>-->
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text text="Object Code" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													</Column>
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text text="Damage Part" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													</Column>
+													<!--	<Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet">
+						<Text text="Material Group" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					</Column>-->
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text text="Damage Code" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													</Column>
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text text="Cause" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													</Column>
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text text="Cause code" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													</Column>
+													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
+														<Text text="" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													</Column>
+												</columns>
+												<items>
+													<ColumnListItem type="Active">
+														<Text id="p1" text=""/>
+														<Text id="p2" text=""/>
+														<Text id="p3" text=""/>
+														<Text id="p4" text=""/>
+														<Text id="p5" text=""/>
+														<Text id="p6" text=""/>
+														<Text id="p7" text=""/>
+													</ColumnListItem>
+												</items>
+											</Table>
+										</content>
+									</Panel>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="4" title="File Upload" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<unified:FileUploader id = "ci_fileUploader1" buttonText="" style="Transparent" icon="sap-icon://add" buttonOnly="true" enabled="true" width="1204px"
+										iconFirst="true" uploadOnChange="true" maximumFileSize="10"
+										mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+										uploadComplete="_onFileUploaderUploadComplete" change="_onFileUploaderChange" typeMissmatch="_onFileUploaderTypeMissmatch"
+										fileSizeExceed="_onFileUploaderFileSizeExceed">
+										<unified:headerParameters/>
+										<unified:parameters/>
+										<unified:xhrSettings/>
+									</unified:FileUploader>
+									<List id="UploadCollection" mode="Delete" delete="ci_handleDelete" itemPress="downListPress" enableBusyIndicator="true" headerText=""
+										noDataText="Use  &quot;+&quot; button for upload" growing="true"></List>
+									<Button id="Button" text="Upload Now" press="_onFileUploaderChange" visible = "false"/>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<Button text="Notification List" type="Default" icon="sap-icon://activity-items" iconFirst="true" width="auto" enabled="true" visible="true"
+						iconDensityAware="false" press="list"/>
+					<ToolbarSpacer width=""/>
+					<Button text="Save Notification" type="Accept" icon="sap-icon://save" iconFirst="true" width="auto" enabled="true" visible="true"
+						iconDensityAware="false" press="save"/>
+							<Button text="TEST" type="Accept" icon="sap-icon://save" iconFirst="true" width="auto" enabled="true" visible="false"
+						iconDensityAware="false" press="test1"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

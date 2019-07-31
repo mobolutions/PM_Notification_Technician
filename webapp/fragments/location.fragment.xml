@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:table="sap.ui.table"
+	xmlns:f="sap.ui.layout.form">
+	<Dialog id="addcondialog9" class="sapUiSizeCompact" afterClose="dialogAfterclose" title="Functional Location Details">
+		<content>
+			
+		
+		</content>
+		<buttons>
+			<Button text="OK" press="ok" type="Accept"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

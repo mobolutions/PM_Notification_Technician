@@ -1,0 +1,165 @@
+
+
+.sapMPanelBGSolid {
+    background-color: #eff4f9;
+}
+
+
+    .sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent {
+    background-color: #eff4f9;
+    box-shadow: 2px 2px 2px 2px rgba(170, 195, 223, 0.57);
+    margin: 0.5rem;
+}
+
+.sapUiBlockCellContent .sapUiBlockCellTitle {
+    font-size: 0.88rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-color: '#9ea8ad';
+}
+
+.sapUiBlockLayoutSizeL:not(.sapUiBlockLayoutKeepFontSize) .sapUiBlockCellTitle,
+.sapUiBlockLayoutSizeL:not(.sapUiBlockLayoutKeepFontSize) .sapUiBlockCellTitle .sapMLnk {
+    font-size: 0.98rem;
+}
+
+.sapMBar {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 3rem;
+    line-height: 3rem;
+    color: #666666;
+    background-color: #eff4f9;
+    text-shadow: 0 0 0.125rem #ffffff;
+    box-shadow: inset 0 -0.0625rem #417cac;
+}
+
+.sapUiBlockCellTitle {
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: .15rem;
+}
+
+.sapUiBlockLayoutSizeL:not(.sapUiBlockLayoutKeepFontSize) .sapUiBlockCellContent {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    background-color: #eff4f9;
+}
+
+.sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent {
+    background-color: #eff4f9;
+    box-shadow: 2px 2px 2px 2px rgba(170, 195, 223, 0.57);
+    margin: 0.5rem;
+}
+
+element.style {
+    width: 100%;
+    background-image: none;
+    filter: none;
+    background-color: #eff4f9;
+}
+
+.sapUiBlockCellContent {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #596468;
+    padding: 1rem;
+    background-color: #eff4f9;
+}
+
+.sapMPanelHdr {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    margin: 0;
+    -webkit-text-size-adjust: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #596468;
+    background-color: #e3161600;
+}
+
+.sapMTitle {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #596468;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: text;
+    text-shadow: 0 0 0.125rem #ffffff;
+}
+.sapMInputBaseInner {
+    background: transparent;
+    border: none;
+    font-style: normal;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: .85rem;
+    line-height: normal;
+    padding: 0 0.75rem;
+    height: 100%;
+    box-sizing: border-box;
+    flex: auto;
+    min-width: 3rem;
+    text-overflow: ellipsis;
+}
+
+.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: 0.875rem;
+    /* font-family: "72",Arial,Helvetica,sans-serif; */
+    line-height: normal;
+    color: #333333;
+}
+
+.sapMLnk {
+    color: #0070b1;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: .85rem;
+    cursor: pointer;
+}
+
+    .sapMLabel {
+        color: #666666;
+        font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: .85rem;
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: text;
+    }
+    .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent, .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnIcon {
+color: #fdfdfd!important;
+}

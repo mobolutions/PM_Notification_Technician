@@ -1,0 +1,99 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog id="addcondialog1" class="sapUiSizeCompact" afterClose="dialogAfterclose" title="Details">
+		<content>
+		
+			<HBox alignItems="Stretch" direction="Row" fitContainer="true" width="auto" height="auto" justifyContent="Center" renderType="Div"
+				visible="true" displayInline="false">
+				<items>
+					<form:Form width="100%" editable="true" visible="true">
+						<form:title>
+							<core:Title text="Items" level="Auto" icon="sap-icon://functional-location"/>
+						</form:title>
+						<form:formContainers>
+							<form:FormContainer visible="true">
+								<form:formElements>
+								
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="Object part" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</form:label>
+										<form:fields>
+												<ComboBox id="technical1" placeholder="" editable="true" items="{/ObjectGroupF4Set}" change="objcode11" enabled="true" visible="true"
+												width="100%" valueState="None" maxWidth="100%">
+												<core:Item text="{CodeGroup}" enabled="true" key="{PartOfObject}"/>
+											</ComboBox>
+										</form:fields>
+									</form:FormElement>
+										<form:FormElement visible="true">
+										<form:label>
+											<Label text="Object code" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</form:label>
+										<form:fields>
+												<ComboBox id="objectcode" placeholder="" editable="true"  change="location" enabled="true" visible="true" width="100%"
+												valueState="None" maxWidth="100%">
+											
+											</ComboBox>
+											
+										</form:fields>
+									</form:FormElement>
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="Damage" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</form:label>
+										<form:fields>
+										<ComboBox id="damage" placeholder="" editable="true" items="{/DamageGroupF4Set}" change="damage" enabled="true" visible="true" width="100%"
+												valueState="None" maxWidth="100%">
+												<core:Item text="{Problem}" enabled="true" key="{DamageCode}"/>
+											</ComboBox>
+										</form:fields>
+									</form:FormElement>
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="Damage Code" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</form:label>
+										<form:fields>
+												<ComboBox id="damagecode" placeholder="" editable="true"   enabled="true" visible="true" width="100%"
+												valueState="None" maxWidth="100%">
+											
+											</ComboBox>
+										</form:fields>
+									</form:FormElement>
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="Cause" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</form:label>
+										<form:fields>
+											<ComboBox id="cause" placeholder="" editable="true" items="{/CauseGroupF4Set}" change="cause" enabled="true" visible="true" width="100%"
+												valueState="None" maxWidth="100%">
+												<core:Item text="{Cause}" enabled="true" key="{CauseCode}"/>
+											</ComboBox>
+										</form:fields>
+									</form:FormElement>
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="Cause Code" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</form:label>
+										<form:fields>
+												<ComboBox id="causecode" placeholder="" editable="true" enabled="true" visible="true" width="100%"
+												valueState="None" maxWidth="100%">
+											
+											</ComboBox>
+										</form:fields>
+									</form:FormElement>
+								</form:formElements>
+								<form:title/>
+							</form:FormContainer>
+						</form:formContainers>
+						<form:layout>
+							<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+						</form:layout>
+					</form:Form>
+				</items>
+				<layoutData/>
+			</HBox>
+		</content>
+		<buttons>
+			<Button text="OK" press="tableok" type="Accept"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

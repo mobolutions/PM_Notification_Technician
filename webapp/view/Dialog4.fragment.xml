@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.ba293bd41-us_1.mobileRequestMaintenanceV5B.controller.Dialog4" xmlns="sap.m">
+    <Dialog contentHeight="100%" contentWidth="100%" horizontalScrolling="false" showHeader="false" state="None" stretch="false" title="Barcode Scan" type="Standard" verticalScrolling="false">
+        <content>
+            <Carousel height="100%" width="100%" loop="false" showPageIndicator="false" pageIndicatorPlacement="Bottom" visible="true" class="sapUiContentPadding">
+                <pages>
+                    <Image src="/build/uilibraries/content/static/image-canvas.svg" height="auto" width="50px" visible="true" densityAware="false"/>
+                </pages>
+            </Carousel>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="Confirm" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+            <Button text="Cancel" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

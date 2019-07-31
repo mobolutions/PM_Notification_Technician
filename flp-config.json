@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "com.sap.build.ba293bd41-us_1.mobileRequestMaintenanceV5B.Request-satuarday-filter",
+        "description": "Request Maintenance Technician",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/webapp",
+        "appUrl": "#Requestsatuardayfilter-Display",
+        "navigationComponentName": "com.sap.build.ba293bd41-us_1.mobileRequestMaintenanceV5B",
+        "intentSemanticObject": "Request-satuarday-filter",
+        "intentAction": "Display",
+        "html5ApplicationName": "requestsatuardayfilter1",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "0f0c4402-b941-4aeb-b4b2-e5a5c8f9d764"
+        ],
+        "contentPackages": [
+            "11c1400d-7140-4fc7-925c-f5c15073901c"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Request Maintenance",
+        "subtitle": "Technician",
+        "searchKeywords": "Request Maintenance,Technician",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
