@@ -301,22 +301,22 @@
 												</headerToolbar>
 												<columns>
 													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
-														<Text id="mat" text="Object Part"/>
+														<Text id="mat" text="Code Group"/>
 													</Column>
 													<!--	<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
 									<Text text="Description" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="false"/>
 								</Column>-->
 													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
-														<Text text="Object Code" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														<Text text="Object Part" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 													</Column>
 													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
-														<Text text="Damage Part" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														<Text text="Damage Code group" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 													</Column>
 													<!--	<Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet">
 						<Text text="Material Group" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 					</Column>-->
 													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
-														<Text text="Damage Code" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														<Text text="Damage" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 													</Column>
 													<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet">
 														<Text text="Cause" width="100%" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>

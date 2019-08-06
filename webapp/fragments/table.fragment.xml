@@ -15,7 +15,7 @@
 								
 									<form:FormElement visible="true">
 										<form:label>
-											<Label text="Object part" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											<Label text="Code Group" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 										</form:label>
 										<form:fields>
 												<ComboBox id="technical1" placeholder="" editable="true" items="{/ObjectGroupF4Set}" change="objcode11" enabled="true" visible="true"
@@ -26,7 +26,7 @@
 									</form:FormElement>
 										<form:FormElement visible="true">
 										<form:label>
-											<Label text="Object code" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											<Label text="Object part" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 										</form:label>
 										<form:fields>
 												<ComboBox id="objectcode" placeholder="" editable="true"  change="location" enabled="true" visible="true" width="100%"
@@ -38,7 +38,7 @@
 									</form:FormElement>
 									<form:FormElement visible="true">
 										<form:label>
-											<Label text="Damage" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											<Label text="Damage Code group" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 										</form:label>
 										<form:fields>
 										<ComboBox id="damage" placeholder="" editable="true" items="{/DamageGroupF4Set}" change="damage" enabled="true" visible="true" width="100%"
@@ -49,7 +49,7 @@
 									</form:FormElement>
 									<form:FormElement visible="true">
 										<form:label>
-											<Label text="Damage Code" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+											<Label text="Damage" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 										</form:label>
 										<form:fields>
 												<ComboBox id="damagecode" placeholder="" editable="true"   enabled="true" visible="true" width="100%"
